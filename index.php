@@ -8,22 +8,18 @@
     </h2>
 
     <div>
-    Posted on <a href="<?php echo get_permalink() ?>">
-    <time datetime="<?php echo get_the_date('c') ?>"><?php echo get_the_date('l, F, j, Y'); ?></time>
-    </a>
-    By <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' )) ?>"><?php echo get_the_author(); ?></a>
+      <?php wptheme1_post_meta(); ?>
     </div>
     <div>
       <?php the_excerpt(); ?>
     </div>
-    <div>
-      <a href="<?php echo get_the_permalink() ?>" title="<?php the_title_attribute(); ?>">
-      Read More
-      </a>
-    </div>
+    
+      <?php wptheme1_readmore_link(); ?>
+    
     <?php } ?>
+    <?php the_posts_pagination(); ?>
 <?php } else { ?>
-    <p>Sorry no posts matched crireia.</p>
+    <p>Sorry, no posts matched crireia.</p>
 <?php } ?>
 
 <?php get_footer(); ?>
