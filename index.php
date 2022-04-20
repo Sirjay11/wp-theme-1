@@ -19,9 +19,19 @@
     <?php } ?>
     <?php the_posts_pagination(); ?>
 <?php } else { ?>
-    <p>Sorry, no posts matched crireia.</p>
+    <p><?php esc_html_e('Sorry, no posts matched criteria.','wp-theme-1'); ?></p>
 <?php } ?>
 
-<?php get_footer(); ?>
+<?php 
 
- 
+$city = 'london';
+
+echo esc_html__('Your city is ', 'wp-theme-1') . $city;
+
+printf(
+  esc_html__('Your city is %s', 'wp-theme-1'), $city
+);
+
+?>
+
+<?php get_footer(); ?>

@@ -1,0 +1,26 @@
+{
+  "name": "wp-theme-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sirjay11/wp-theme-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sirjay11/wp-theme-1/issues"
+  },
+  "homepage": "https://github.com/Sirjay11/wp-theme-1#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
