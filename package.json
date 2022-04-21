@@ -21,6 +21,12 @@
   },
   "homepage": "https://github.com/Sirjay11/wp-theme-1#readme",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/register": "^7.17.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.50.1",
+    "yargs": "^17.4.1"
   }
 }
