@@ -8,28 +8,29 @@
     </h2>
 
     <div>
-      <?php wptheme1_post_meta(); ?>
+      <?php _themename_post_meta(); ?>
     </div>
     <div>
       <?php the_excerpt(); ?>
     </div>
     
-      <?php wptheme1_readmore_link(); ?>
+      <?php _themename_readmore_link(); ?>
     
     <?php } ?>
     <?php the_posts_pagination(); ?>
+    <?php do_action('_themename_after_pagination'); ?>
 <?php } else { ?>
-    <p><?php esc_html_e('Sorry, no posts matched criteria.','wp-theme-1'); ?></p>
+    <p><?php esc_html_e('Sorry, no posts matched criteria.','_themename'); ?></p>
 <?php } ?>
 
 <?php 
 
 $city = 'london';
 
-echo esc_html__('Your city is ', 'wp-theme-1') . $city;
+echo esc_html__('Your city is ', '_themename') . $city;
 
 printf(
-  esc_html__('Your city is %s', 'wp-theme-1'), $city
+  esc_html__('Your city is %s', '_themename'), $city
 );
 
 ?>
